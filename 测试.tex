@@ -1,0 +1,106 @@
+\documentclass{article}
+%%%===¡Á¨¨===
+\newcommand{\chuhao}{\fontsize{42pt}{\baselineskip}\selectfont}     %
+\newcommand{\xiaochuhao}{\fontsize{36pt}{\baselineskip}\selectfont} %
+\newcommand{\yihao}{\fontsize{28pt}{\baselineskip}\selectfont}      %
+\newcommand{\erhao}{\fontsize{21pt}{\baselineskip}\selectfont}      %
+\newcommand{\xiaoerhao}{\fontsize{18pt}{\baselineskip}\selectfont}  %
+\newcommand{\sanhao}{\fontsize{15.75pt}{\baselineskip}\selectfont}  %
+\newcommand{\sihao}{\fontsize{14pt}{\baselineskip}\selectfont}      %
+\newcommand{\xiaosihao}{\fontsize{12pt}{\baselineskip}\selectfont}  %
+\newcommand{\wuhao}{\fontsize{10.5pt}{\baselineskip}\selectfont}    %
+\newcommand{\xiaowuhao}{\fontsize{9pt}{\baselineskip}\selectfont}   %
+\newcommand{\liuhao}{\fontsize{7.875pt}{\baselineskip}\selectfont}  %¨´
+\newcommand{\qihao}{\fontsize{5.25pt}{\baselineskip}\selectfont}    %
+
+%%%===¡Á¨¨===
+\newcommand{\song}{\CJKfamily{song}}
+\newcommand{\kai}{\CJKfamily{kai}}
+\newcommand{\hei}{\CJKfamily{hei}}
+\newcommand{\fang}{\CJKfamily{zhfs}}
+
+\usepackage{ctex}
+\usepackage{CJK}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{pdfpages}
+\usepackage{url}
+\usepackage{colortbl}
+\usepackage{epsfig}
+\usepackage{epstopdf}
+\usepackage{indentfirst} % ¡Á
+\usepackage{abstract}    % 2¡ã¨¹¡Á¨º¡ã¨¹
+\usepackage{geometry} %  geometry ¡¤¡À¨¨¨®
+%\usepackage[Sonny]{fncychap}  [Lenny][Glenn]{Conny][Rejne][Bjarne]
+\usepackage{mathtools}
+\usepackage{inconsolata} % very nice fixed-width font included with texlive-full
+\usepackage[usenames,dvipsnames]{xcolor} % more flexible names for syntax highlighting colors
+\usepackage{textcomp}
+\usepackage{listings}
+\usepackage[T1]{fontenc}
+\usepackage{beramono}
+
+%%
+%% Julia definition (c) 2014 Jubobs
+%%
+\lstdefinelanguage{Julia}%
+{morekeywords={abstract,break,case,catch,const,continue,do,else,elseif,%
+		end,export,false,for,function,immutable,import,importall,if,in,%
+		macro,module,otherwise,quote,return,switch,true,try,type,typealias,%
+		using,while},%
+	sensitive=true,%
+	%alsoother={$},%
+	morecomment=[l]\#,%
+	morecomment=[n]{\#=}{=\#},%
+	morestring=[s]{"}{"},%
+	morestring=[m]{'}{'},%
+}[keywords,comments,strings]%
+
+\lstnewenvironment{Julia}[1][]{
+	\lstset{%
+		language         = Julia,
+		basicstyle       = \ttfamily,
+		keywordstyle     = \bfseries\color{blue},
+		stringstyle      = \color{magenta},
+		commentstyle     = \color{ForestGreen},
+		showstringspaces = false,
+		lineskip		 = {-2.5pt},
+	}
+}{}
+
+
+\newtheorem{theorem}{¡§¨ª}[section]
+\newtheorem{lemma}[theorem]{¨ª}
+\newtheorem{conjecture}[theorem]{}
+\newtheorem{proposition}[theorem]{¨¹}
+\newtheorem{corollary}[theorem]{}
+
+\newenvironment{proof}[1][¡è¡Â]{\begin{trivlist}
+		\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{definition}[1][¡§]{\begin{trivlist}
+		\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{example}[1][¡Á]{\begin{trivlist}
+		\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{remark}[1][¡Á]{\begin{trivlist}
+		\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+
+\newcommand{\qed}{\nobreak \ifvmode \relax \else
+	\ifdim\lastskip<1.5em \hskip-\lastskip
+	\hskip1.5em plus0em minus0.5em \fi \nobreak
+	\vrule height0.75em width0.5em depth0.25em\fi}
+
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+
+\newcommand{\inlinecode}[1]{\texttt{#1}}
+\newcommand{\icd}[1]{\texttt{#1}}
+
+\begin{document}
+	\begin{CJK*}{GBK}{song}
+		
+		ÄãºÃ
+		
+	\end{CJK*}
+\end{document} 
